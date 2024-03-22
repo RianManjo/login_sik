@@ -2,108 +2,169 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
-.header {
+/* Side Left */
+.content-left {
+    float: left;
+}
+
+.content-left .header {
+    display: flex;
     gap: 33.05px;
-    margin-left: 50px;
+    margin-top: 50px;
+    margin-left: 68px;
 }
 
-.header .title {
+.content-left .header span {
+    text-transform: uppercase;
     color: #442292;
     font-size: 20px;
     font-family: Inter, sans-serif;
     font-weight: 600;
     line-height: 28px;
+    margin-top: 18px;
 }
 
-.wrapper {
-    margin-top: 129px;
-    margin-left: 194px;
+.content-left .header span span {
+    text-transform: capitalize;
 }
 
-.wrapper .head .title {
+.wrapper .title {
     color: #000;
     font-size: 32px;
     font-family: Inter, sans-serif;
     font-weight: 600;  
-    margin-bottom: 39px;
+    margin-top: 120px;
+    margin-left: 194px;
 }
 
-.wrapper ul {
-    list-style: none;
-    margin-left: -30px;
+.wrapper .form ul{
+    margin-left: 164px;
 }
 
-.wrapper ul li p {
-    text-transform: uppercase;
-    font-size: 12px;
-    font-family: Inter, sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-.wrap {
-    margin-top: 98px;
+.form ul li img {
+    margin-left: -40px;
+    margin-top: 15px;
+    position: absolute;
 }
 
 .form ul li input {
     width: 348px;
     height: 50px;
-    /* border: none ; */
 }
 
-.btn {
-    margin-left: -10px;
-}
-
-.btn-login {
-    width: 348px;
-    height: 48px;
-    background-color: #452393;
-    color: #FFF;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
+.form ul li p {
+    font-size: 12px;
     font-family: Inter, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
 }
 
-.support {
-    margin-left: 30px;    
-}
-
-.support img {
-    margin-right: 16px;
-}
-
-.support span {
-    color: #78777B;
-    font-size: 18px;
-    font-family: Manrope, sans-serif;
-    font-weight: 600;
-}
-
-.support span span {
-    color: #354C9F;    
-}
 
 .form input[type="username"],
 .form input[type="password"] {
-    border: 1px solid #8F9BB3; 
+    border: 1.3px solid #8F9BB3;
+    outline: 1.3px solid #8F9BB3;
     transition: border-color 0.3s ease;
+    padding-left: 16px;
+    padding-right: 44px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
 }
 
 .form input[type="username"]:focus,
 .form input[type="password"]:focus {
     border-color: #8F9BB3 !important;
+    outline: 1.3px solid #8F9BB3;    
     font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-weight: 400;    
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #8F9BB3;     
 }
 
+.btn {
+    margin-left: -12px;
+    margin-top: 20px;
+}
+
+.btn-login {
+    background-color: #442292;
+    width: 348px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    letter-spacing: 1.2px;
+}
+
+.support {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    gap: 32px;
+    margin-left: 180px;
+    margin-top: 100px;    
+}
+
+.support img {
+    width: 32px;
+}
+
+.support p {
+    margin-top: 14px;
+    font-size: 18px;
+    font-family: Manrope, sans-serif;
+    color: #78777B;
+    font-weight: 500;    
+}
+
+.support p span {
+    color: #354C9F;
+}
+/* Side Left End */
 
 
+/* Side Right */
+.content-right {
+    float: right;
+    background-image: url('assets/images/brand.svg');
+    background-size: cover;    
+    background-repeat: repeat;
+    width: 695px;
+    height: 100vh;
+    border-bottom-left-radius: 11px;
+}
 
+.content-right .wrap {
+    margin-left: 83px;
+    margin-top: 98px;
+}
 
+.content-right .title {
+    font-size: 60px;
+    font-family: Gemunu Libre, sans-serif;
+    color: #FFF;
+    margin-top: 83px;
+    margin-left: 80px;
+}
 
-
-
+.content-right .sub-title {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    color: #FFF;
+    margin-left: 80px;
+    margin-top: -20px;
+}
+/* Side Right End */
