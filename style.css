@@ -1,0 +1,54 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    gap: 33.05px;
+    margin-left: 50px;
+}
+
+.header .title {
+    color: #442292;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.wrapper {
+    margin-top: 129px;
+    margin-left: 194px;
+}
+
+.wrapper .head .title {
+    color: #000;
+    font-size: 32px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;  
+    margin-bottom: 39px;
+}
+
+.wrapper ul {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.wrapper ul li p {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+.wrap {
+    margin-top: 98px;
+}
+
+
+
+
+
